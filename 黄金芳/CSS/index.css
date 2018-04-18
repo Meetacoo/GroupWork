@@ -1,5 +1,5 @@
 /*common*/
-*{
+body{
 	background-color: #ededed;
 }
 .top,
@@ -83,22 +83,26 @@ a:hover{
 	z-index: 2;
 	background-color: #131313;
 }
+.top .carf a i:hover{
+	color: #fff;
+}
 .top .carf a{
 	padding-left: 38px;
 	background-color: #131313;
 }
-.top .carf a .iconfont{
-	font-size: 16px;
-}
 .top .carf a span{
-	width: 0px;
-	height: 0px;
-	border: 10px solid #9a9a9a;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	/*border: 10px solid #9a9a9a;*/
+	background-color: #9a9a9a;
 	border-radius: 50%;
 	z-index: 1;
 	position: absolute;
-	left: 135px;
-	top: 36px;
+	line-height: 20px;
+	margin-top: 40px;
+	/*left: 135px;*/
+	/*top: 36px;*/
 }
 .s-nav{
 	width: 1583px;
@@ -237,6 +241,47 @@ a:hover{
 .col1{
 	float: left;
 	width: 305px;
+	position: relative;
+}
+.col1:hover .bg{
+	opacity: 1;
+}
+.full:after{
+	content: "";
+	display: inline-block;
+	background-color: #ffe7e5;
+	color: #d03b34;
+	position: absolute;
+	width: 56px;
+	height: 20px;
+	right: 20px;
+	top: 20px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid #f3938b;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.full-go:after{
+	content: "满赠";
+}
+.down-go:after{
+	content: "直降";
+}
+.down:after{
+	content: "直降";
+	background-color: #fffbdf;
+	color: #a06e37;
+	border: 1px solid #d5b480;
+}
+.time:after{
+	content: "限时优惠";
+	background-color: #fffbdf;
+	color: #a06e37;
+	border: 1px solid #d5b480;
+}
+.percent-go:after{
+	content: "五折";
 }
 .fourpic ul li img,.col1 li img{
 	background-size: 100%;
@@ -254,7 +299,7 @@ a:hover{
 	background-color: #fff;
 }
 .img-box{
-	margin-top: 40px;
+	margin-top: 45px;
 	background-color: #fff;
 }
 .col1 .intro{
@@ -287,11 +332,35 @@ a:hover{
 	color: #d2d2d2;
 	background-color: #fff;
 }
-.f-s a input{
+.mid .col1 a input{
 	background-color: #fff;
 }
 .col1 .price span{
 	background-color: #fff;
+}
+.col1 .bg{
+	display: inline-block;
+	width: 305px;
+	height: 430px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(222,222,222,0.2);
+	opacity: 0;
+	transition: all 0.3s;
+	text-align: center;
+}
+.big .bg{
+	width: 61px;
+}
+.col1 .bg input{
+	width: 100px;
+	height: 30px;
+	border: 1px solid #e1e1e1;
+	color: #656565;
+	border-radius: 5px;
+	margin-top: 370px;
+	cursor: pointer;
 }
 .mid .hotgoods
 {
@@ -414,6 +483,10 @@ a:hover{
 	margin: 30px;
 	background-color: #fff;
 }
+.mid .clearpic li:last-child a .price{
+	margin-top: 55px;
+	vertical-align: 5px;
+}
 .mid .forumpic .col1 p{
 	width: 236px;
 	font-size: 14px;
@@ -445,6 +518,11 @@ a:hover{
 }
 .mid .f-s{
 	margin-top: 1px;
+}
+.choipic li:nth-child(4) .desc,
+.choipic li:nth-child(7) .desc,
+.goodspic li:nth-child(2) .desc{
+	color: #999;
 }
 .footer{
 	/*margin-top: 60px;*/
