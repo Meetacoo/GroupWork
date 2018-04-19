@@ -8,3 +8,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
