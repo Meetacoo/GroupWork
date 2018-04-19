@@ -664,5 +664,14 @@ a:hover{
 	line-height: 60px;
 }
 .footer .footer-bottom .b-right .flag{
-	background-color: #fafafa;	
+	background-color: #fafafa;
+}
+.footer .footer-bottom .b-right a span{
+	color: #45474b;
+	font-size: 11px;
+}
+.footer .footer-bottom .b-right .arrow{
+	display: inline-block;
+	float: right;
+	color: #45474b;
 }
