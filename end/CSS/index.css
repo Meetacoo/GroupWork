@@ -644,6 +644,9 @@ a:hover{
 .footer .footer-left dl dd a{
 	color: #969696;
 }
+.footer .footer-left dl dd>a:hover{
+	color: #6585d9;
+}
 .footer .footer-right{
 	width: 208px;
 	height: 175px;
