@@ -1,0 +1,373 @@
+.top{
+	width: 1583px;	
+	height: 100px;
+	background: #0a0a0a;
+}
+.top .nav{
+	width: 100%;
+	height: 100px;
+}
+.top .nav0 ul li a:hover{
+	color: white;
+}
+.top .nav .logo{
+	float: left;
+	width: 225px;
+	height: 48px;
+	padding-top: 26px;
+	box-sizing: border-box;
+}
+.top .nav .logo a{
+	float: right;
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-image: url(../images/24.jpg);
+    background-repeat: no-repeat;
+
+}
+.top .nav .nav0{
+	width: 1060px;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+}
+.top .nav .nav0 ul{
+	width: 100%;
+	height: 100%;
+	padding-left: 250px;
+	box-sizing: border-box;
+}
+.top .nav ul li{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    margin-right: 40px;
+    color: #c8c8c8;
+}
+.top .nav ul li a{
+	height: 100px;
+	line-height: 100px;
+	color: #c8c8c8;
+
+}
+.top .use{
+    width: 298px;
+    height: 100%;
+    float: right;
+}
+.top .use .cart{
+	width: 50px;
+	height: 25px;
+	position: relative;
+	top: 35px;
+	left: 50px;
+}
+.top .use .cart i{
+	font-size: 20px;
+}
+.top .use .cart a{
+	text-decoration: none;
+	color: #c9c9c9;
+}
+.top .use span{
+	width: 25px;
+	height: 25px;
+	display: block;
+	text-align: center;
+	background: #9a9a9a;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+.top .use .cart i:hover a{
+	color: white;
+}
+.mid{
+	width: 1583px;
+	height: 2866px;
+}
+.mid .nav{
+	width: 1583px;
+	height: 40px;
+	position: relative;
+}
+.mid .top{
+	width: 1583px;
+	height: 40px;
+	background: #191919;
+}
+.mid .top ul{
+	height: 40px;
+	padding-left: 180px;
+	box-sizing: border-box;
+}
+.mid .top ul li{
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	margin-right: 30px;
+}
+
+.mid .top a{
+	color: #4c4c44;
+	font-size: 12px;
+}
+.mid .top a:hover{
+	color: #808080;
+}
+.mid .top ul li:nth-child(2) a{
+	color: #808080;
+}
+.mid .top .right1{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	text-align: center;
+	position: absolute;
+	right: 180px;
+	top: 5px;
+}
+.mid .top .right1 a{
+	display: block;
+	border-radius: 4px;
+	background: #2049a1;
+	color: white;
+	width: 100px;
+	height: 30px;
+}
+.mid .top .right1 a:hover {
+	background: #1b366d;
+}
+.mid .top .right0{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: right;
+	position: absolute;
+	right: 318px;
+	top: 0px;
+}
+.mid .top .right0 div:nth-child(2){
+	color: #808080;
+}
+.mid .top .right0 div{
+	float: left;
+	margin-right: 20px;
+}
+.mid .midd{
+	width: 100%;
+	height: 1920px;
+}
+
+.mid .ft{
+	width: 100%;
+	height: 800px;
+}
+.mid .ft .p2bottom0{
+	width: 100%;
+	height: 139px;
+	border-bottom:3px solid #ede6e0; 
+}
+.mid .ft .p2bottom{
+	width: 520px;
+	height: 139px;
+	margin: -5px auto;
+	text-align: center;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+.mid .ft .p2bottom .pp1{
+	color: #745e50;
+	font-size: 18px;
+	margin-bottom: 22px;
+}
+.mid .ft .p2bottom .pp2{
+	color: #745e50;
+	font-size: 12px;
+}
+.mid .ft .p2bottom .pp2 a{
+	color: #517cd5;
+	font-size: 10px;
+}
+.mid .ft .p2bottom .pp1 span:first-child{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #7c6657;
+	display: inline-block;
+	background: 1px solid #755e4f;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	color: #7c6657;
+	margin-right: 100px;
+	font-weight: bold;
+}
+.mid .ft .p2bottom .pp1 span:last-child{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #7c6657;
+	display: inline-block;
+	background: 1px solid #755e4f;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	color: #7c6657;
+	margin-left: 100px;
+	font-weight: bold;
+}
+.tim{
+	width: 100%;
+	height: 80px;
+	border-bottom: 2px solid #e6e6e6;
+}
+.tim .tim1{
+	text-align: center;
+	font-size: 10px;
+	color: #8b5e8c;
+	margin-top: 25px;
+}
+.tim .tim2{
+	width: 93px;
+	height: 31px;
+	background: #5a85f0;
+	line-height: 31px;
+	margin:20px auto;
+	text-align: center;
+	border-radius: 5px;
+}
+.tim .tim2 a{
+	color: white;
+	font-size: 12px;
+}
+.footer{
+	width: 1583px;
+	height: 271px;
+	margin-top: 40px;
+}
+.footer .foott{
+	width: 100%;
+	height: 150px;
+}
+.footer .foott .foott1{
+	width: 1023px;
+	height: 150px;
+	float: left;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+.footer .foott .foott1 dl{
+	float: left;
+	margin-left: 100px;
+}
+.footer .foott .foott1 dl dt{
+	margin-bottom: 20px;
+	color: #646464;
+	font-size: 12px;
+}
+.footer .foott .foott1 dl dd{
+	margin-top: 10px;
+}
+.footer .foott .foott1 dl dd a{
+	color: #969696;
+	font-size: 12px;
+}
+.footer .foott .foott1 dl a:hover{
+	color: #6992f3;
+}
+.footer .foott .foott2{
+	width: 560px;
+	height: 150px;
+	float: right;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.footer .foott .foott2 .p1{
+ 	font-size: 24px;
+ 	color: #646464;
+}
+.footer .foott .foott2 .p2{
+	margin-top: 14px;
+	margin-bottom: 13px;
+	font-size: 12px;
+	color: #c3c3c3;
+}
+.footer .foott .foott2 .p3{
+	height: 33px;
+	width: 130px;
+	border: 1px solid #dcdcdc;
+	line-height: 33px;
+	text-align: center;
+	position: absolute;
+	left: 215px;
+	top: 85px;
+
+}
+.footer .foott .foott2 .p3 a{
+	color: #6992f3;
+}
+.footer .foott .foott2 .p3 span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #6992f3;
+	color: white;
+	line-height: 15px;
+	text-align: center;
+	border-radius: 50%;
+}
+.footer .footb{
+	width: 100%;
+	height: 121px;
+}
+.footer .footb .footb1{
+	width: 990px;
+	height: 121px;
+	float: left;
+	padding-left: 60px;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.footer .footb .footb1 p{
+	font-size: 12px;
+	margin-bottom: 12px;
+	color: #757575;
+}
+.footer .footb .footb1 p a{
+	color: #5079d9;
+}
+.footer .footb .footb1 .aa1{
+	font-size: 12px;
+	color:#bdbdbd; 
+}
+.footer .footb .footb2{
+ 	width: 445px;
+ 	height: 121px;
+ 	float: right;
+ 	padding-left: 120px;
+ 	padding-top: 20px;
+ 	box-sizing: border-box;
+}
+.footer .footb .footb2 a{
+	color: black;
+	font-size: 12px;
+}
+.footer .footb .footb2 p img{
+	margin-right: 10px;
+}
+.footer .footb .footb2 p span{
+	display: inline-block;
+	width: 0;
+    height: 0;
+    margin-left: 20px;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    border-left: 5px solid transparent;
+}
+	
