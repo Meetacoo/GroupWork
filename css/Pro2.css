@@ -64,6 +64,11 @@ a{
     width: 298px;
     height: 100%;
     float: right;
+    position:relative;
+}
+.top .use img{
+	position: absolute;
+	top: 35px;
 }
 .top .use .cart{
 	width: 50px;
@@ -186,6 +191,7 @@ a{
 	width: 1023px;
 	height: 150px;
 	float: left;
+	padding-left: 130px;
 	padding-top: 15px;
 	box-sizing: border-box;
 }
