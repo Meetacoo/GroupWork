@@ -85,7 +85,11 @@ a{
 	display: block;
 	text-align: center;
 	background: #9a9a9a;
+	color: white;
+	cursor: pointer;
 	border-radius: 50%;
+	box-sizing: border-box;
+	padding-top: 3px;
 	position: absolute;
 	top: 0px;
 	left: 20px;
