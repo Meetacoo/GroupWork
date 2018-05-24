@@ -145,6 +145,9 @@ a:hover{
 	position: fixed;
 	/*display: none;*/
 }
+/*.s-nav .content .down a{
+	height: 100%;
+}*/
 .s-nav .content .down:after{
 	content: none;
 }
@@ -158,7 +161,7 @@ a:hover{
 }
 .s-nav .content .down .after li{
 	height: 100%;
-	display: none;
+	overflow: hidden;
 }
 .centerad{
 	width: 100%;
