@@ -97,6 +97,90 @@ a{
 .top .use .cart i:hover a{
 	color: white;
 }
+.ftop{
+	width: 100%;
+	height: 0px;
+	position: fixed;
+	background: #191919;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.ftop .ul1 li:nth-child(1) h2{
+	height: 60px;
+	line-height: 60px;
+	color: grey;
+	font-size: 20px;
+	margin-right: 100px;
+}
+.ftop .ul1 {
+	float: left;
+	width: 600px;
+	height: 100%;
+	margin-left: 140px;
+}
+.ftop .ul1 ul li{
+	height: 100%;
+	line-height: 60px;
+	text-align: center;
+	padding-top: 0px;
+	box-sizing: border-box;
+	float: left;
+	margin-left:30px;
+}
+.ftop .ul1 ul li:nth-child(3) a{
+	color: grey;
+}
+.ftop .ul1 ul li a{
+	color: #4c4c44;
+	font-size: 14px;
+}
+.ftop .ul1 ul li a:hover{
+	color: grey;
+}
+.ftop .ul2{
+	float: right;
+	margin-right: 180px;
+	width: 400px;
+	height: 100%;
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+
+}
+.ftop .ul2 li{
+	float: left;
+	margin-left: 20px;
+}
+.ftop .ul2 li:nth-child(2) div{
+	height: 12px;
+	overflow: hidden;
+	border: 1px solid #4c4c44;
+	position: absolute;
+	left: 130px;
+	top: 22px;
+}
+.ftop .ul2 span{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #5079d9;
+	border-radius: 3px;
+	color: white;
+}
+.ftop .ul2 span:hover{
+	background: #19419b;
+	cursor: pointer;
+}
+.ftop .ul2 a{
+	color: #4c4c44;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+
 .mid{
 	width: 1583px;
 	height: 2866px;
