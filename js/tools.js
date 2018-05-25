@@ -141,7 +141,7 @@ Carousel.prototype.init = function(){
 	//底部按钮
 	this.oBottomBtn = document.createElement('ul');
 	this.oBottomBtn.className = 'bottomBtn';
-	this.oBottomBtn.style.zIndex = 999;
+	this.oBottomBtn.style.zIndex = 1100;
 	for (var i = 0; i < this.aImg.length; i++) {
 		var oLi = document.createElement('li');
 		if (i == 0) {

@@ -101,66 +101,153 @@ a:hover{
 	line-height: 20px;
 	margin-top: 40px;
 }
-.s-nav{
+.top .carf .carf-box{
+	width: 400px;
+	height: 320px;
+	background-color: #fff;
+	right: 230px;
+	top: -20px;
+	border-top: none;
+	z-index: 1100;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	position: relative;
+	display: none;
+}
+.top .carf .carf-box .top{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+	right: 32px;
+	top: -8px;
+	border-radius: 4px;
+	transform: rotateZ(45deg);
+}
+.top .carf .carf-box img{
+	margin: 70px auto 0 auto;
+}
+.top .carf .carf-box p.desc{
+	margin-top: -40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #444;
+}
+.top .carf .carf-box p.hint{
+	/*margin-top: -40px;*/
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #9a9a9a;
+}
+.s-nav,
+.s-nav2{
 	width: 1583px;
 	height: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	overflow: hidden;
+}
+.s-nav2{
+	height: 0px;
+	top: 0px;
+	position: fixed;
+	z-index: 1211;
+}
+.s-nav2 .content{
+	width: 100%;
+	height: 100%;
 }
 .s-nav .content .up{
 	width: 100%;
 	height: 90px;
+	overflow: hidden;
 }
 .s-nav .content .before{
 	width: 100%;
 	height: 100%;
 	line-height: 90px;
 	position: absolute;
+	overflow: hidden;
 	/*left: 0;*/
 	/*top: 0;*/
 }
-.s-nav .content ul li:nth-child(1){
+.s-nav .content ul li:nth-child(1),
+.s-nav2 .content ul li:nth-child(1){
 	margin-left: 20px;
 }
-.s-nav .content ul li{
+.s-nav .content ul li,
+.s-nav2 .content ul li{
 	display: inline-block;
 	margin-left: 40px;
 	font-size: 14px;
+	position: relative;
+	/*box-sizing: border-box;*/
 }
-.s-nav .content ul li a{
+.s-nav .content ul li a,
+.s-nav2 .content ul li a{
 	color: #666;
 }
-.s-nav .content ul li a:hover{
+.s-nav .content ul li:nth-child(1) a,
+.s-nav2 .content ul li:nth-child(1) a{
+	font-weight: 800;
+}
+.s-nav .content ul li a:hover,
+.s-nav2 .content ul li a:hover{
 	color:#5079d9;
 }
-.s-nav .content .down{
-	width: 100%;
+.s-nav .content ul li:after,
+.s-nav2 .content ul li:after{
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	border-radius: 1px;
+	background-color: #999;
+	color: #999;
+	position: absolute;
+	top: 50%;
+	/*left: 50%;*/
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.s-nav2 .content .down ul li:after{
+	background-color: #333;
+	color: #333;
+}
+.s-nav .content ul li:last-child:after,
+.s-nav2 .content ul li:last-child:after{
+	width: 0px;
 	height: 0px;
+}
+.s-nav2 .content .down{
+	width: 100%;
+	height: 100%;
 	line-height: 60px;
-	z-index: 1111;
 	/*position: absolute;*/
 	left: 0;
 	top: 0;
-	position: fixed;
 	/*display: none;*/
 }
 /*.s-nav .content .down a{
 	height: 100%;
 }*/
-.s-nav .content .down:after{
+.s-nav2 .content .down:after{
 	content: none;
 }
-.s-nav .content .down .after{
+.s-nav2 .content .down .after{
 	width: 100%;
-	padding-left: 160px;
-	box-sizing: border-box;
 	height: 100%;
+	padding-left: 180px;
+	box-sizing: border-box;
 	line-height: 60px;
 	background-color: #fff;
 }
-.s-nav .content .down .after li{
+.s-nav2 .content .down .after li{
 	height: 100%;
+	float: left;
 	overflow: hidden;
 }
 .centerad{
@@ -172,80 +259,6 @@ a:hover{
 	border-radius: 10px;
 	overflow: hidden;
 
-}
-.centerad .img-box{
-	width: 100%;
-	height: 100%;
-}
-.centerad .img-box img{
-	background-size: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.centerad .img-box .li{
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.centerad .imgbox li:nth-child(3){
-	animation: sport 20s linear 0s infinite normal;
-}
-@keyframes sport{
-	0%{
-		opacity: 1;
-	}
-	30%{
-		opacity: 1;
-	}
-	40%{
-		opacity: 0;
-	}
-	90%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
-.centerad .imgbox li:nth-child(2){
-	animation: sport1 20s linear 0s infinite normal;
-}
-@keyframes sport1{
-	0%{
-		opacity: 0;
-	}
-	20%{
-		opacity: 0;
-	}
-	30%{
-		opacity: 1;
-	}
-	60%{
-		opacity: 1;
-	}
-	70%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 0;
-	}
-}
-.centerad .btn-box{
-	position: absolute;
-	left: 50%;
-	bottom: 20px;
-}
-.centerad .btn-box li{
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	border: 3px solid #dbdbdb;
-	background-color: rgba(255,255,255,0.3);
-	border-radius: 50%;
-	list-style: circle;
-	z-index: 8;
-	cursor: pointer;
 }
 .fourpic{
 	width: 100%px;
