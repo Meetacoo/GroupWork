@@ -23,7 +23,7 @@ function animation(obj,opation,isLinear,fnEnd){
 					isStopAll = false;
 				}
 			}else{
-				iSpeed = (opation[attr] - curr) / 2;
+				iSpeed = (opation[attr] - curr) / 5;
 				iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
 
 				if (!iSpeed) {
