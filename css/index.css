@@ -232,6 +232,7 @@ a:hover{
 	/*position: absolute;*/
 	left: 0;
 	top: 0;
+	box-sizing: border-box;	
 	/*display: none;*/
 }
 .s-nav2 .content .after li:after{
@@ -308,16 +309,41 @@ a:hover{
 	top: 190px;
 	/*display: none;*/
 	overflow: hidden;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2)
 }
 .phone-content .content{
 	border-top: 1px solid #ddd;
 	height: 100%;
 }
 .phone-content .content .phone li{
-	width: 245px;
-	height: 300px;
-	background-color: orange;
+	width: 240px;
+	height: 320px;
+	/*background-color: orange;*/
 	text-align: center;
+	float: left;
+	margin-left: 0;
+	position: relative;
+
+}
+.phone-content .content .phone li .bg{
+	width: 150px;
+	height: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	top: 20px;
+	background-color: rgba(100,100,100,0.1);
+}
+.phone-content .content .phone li img{
+	margin: 20px auto;	
+}
+.phone-content .content .phone li .name{
+	color: #666;
+	margin-top: -10px;
+}
+.phone-content .content .phone li .price{
+	color: red;
+	font-weight: 600;
 }
 .centerad{
 	width: 100%;
