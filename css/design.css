@@ -307,9 +307,22 @@ a{
 	height: 144px;	
 }
 .mid .ft .p2top{
-	width: 100%;
+	width: 1583px;
 	height: 517px;
 	background: #f9f8f6;
+	overflow: hidden;
+}
+.mid .ft .p2top .p2topimg{
+	width: 2392.8px;
+	height: 100%;
+	background: pink;
+}
+.mid .ft .p2top li:nth-child(1){
+	margin-left: 38.3px;
+}
+.mid .ft .p2top li{
+	float: left;
+	margin-left: 72.6px;
 }
 .mid .ft .p2bottom0{
 	width: 100%;
