@@ -1,7 +1,8 @@
 hjfScroll();
 hjfTopNav();
-hjfCarousel();
 hjfPhoneContent();
+hjfCarousel();
+hjfHotGoods();
 function hjfScroll(){
 	var show = false;
 	window.onscroll = window.onload = function(){
@@ -25,7 +26,8 @@ function hjfScroll(){
 					animation(oUpNav,{height:0},false);
 				},100); 
 					oPhoneBox.style.top = '0px';
-					animation(oDownNav,{height:60},false);
+					// oDownNav.style.display = 'block';
+					animation(oDownNav,{height:60,backgroundColor:'#fff'},false);
 				// oUpNav.style.height = '0px';	
 				animation(oPhoneBox,{top:60,position:'fixed'})
 				// animation(oPhoneBox,{top:20,position:'fixed'},false,function(){
@@ -40,6 +42,7 @@ function hjfScroll(){
 				show = false;
 				// animation(oDownNav,{height:0},false);
 				oDownNav.style.height = '0px';
+				// oDownNav.style.display = 'none';
 				// animation(oUpNav,{height:90},false,function(){
 				// 	animation(oPhoneBox,{top:190,position:'relative'});
 				// });
@@ -63,6 +66,8 @@ function hjfTopNav(){
 	var oCarf2 = document.querySelector('.s-nav2 .carf a .fa-shopping-cart');
 	var oCarfBox = document.querySelector('.top .carf .carf-box');
 	var oCarfBox2 = document.querySelector('.s-nav2 .carf .carf-box');
+	var oUpNav = document.querySelector('.s-nav');
+	var oDownNav = document.querySelector('.s-nav2');
 	var timer = null;
 	oCarfNum.onmouseenter = function(){
 		show();
@@ -104,6 +109,7 @@ function hjfTopNav(){
 		clearTimeout(timer);
 		oCarf.style.color = '#fff';
 		oCarfBox.style.display = 'block';	
+		animation(oUpNav,{backgroundColor:'#fff'});
 	}
 	function blank(){
 		timer = setTimeout(function(){
@@ -213,4 +219,20 @@ function hjfCarousel() {
 		height:501,
 		playDuration:3000
 	});
+}
+function hjfHotGoods(){
+	var aSpan = document.querySelectorAll('.mid .hotgoods .hotgoods-box .right span');
+	var oListUl = document.querySelector('.mid .hotgoods .goodsbox .goodspic');
+	console.log(aSpan);
+	aSpan[0].className = 'active';
+	aSpan[0].onclick = function(){
+		animation(oListUl,{marginLeft:0},false);
+		aSpan[0].className = 'active';
+		aSpan[1].className = '';
+	}
+	aSpan[1].onclick = function(){
+		animation(oListUl,{marginLeft:-1224},false);
+		aSpan[1].className = 'active';
+		aSpan[0].className = '';
+	}
 }

@@ -46,10 +46,12 @@ a{
 	box-sizing: border-box;
 	border-radius: 5px;
 	/*color: #d6d6d6;*/
+	overflow: hidden;
 }
-.main .user-up:active,
-.main .user-down:active{
-	border: 1px solid #6999e5;
+.main .user-up,
+.main .user-down{
+	/*border: none;*/
+	/*border: 1px solid #6999e5;*/
 }
 .main .user-up a,
 .main .user-down a{
@@ -62,6 +64,7 @@ a{
 	box-sizing: border-box;
 	line-height: 46px;
 	transition: all 0.5s;
+	border-right: 1px solid #dfdfdf;
 }
 .main .user-up a:hover,
 .main .user-down a:hover{
@@ -76,13 +79,13 @@ a{
 	color: #333;
 	font-size: 16px;
 	border: none;
-	border-left: 1px solid #dfdfdf;
 	padding-left: 15px;
+	outline: none;
 }
-.main .user-up input:focus,
+/*.main .user-up input:focus,
 .main .user-down input:focus{
 	outline-color: rgba(0,0,0,0);
-}
+}*/
 .main .user-down{
 	margin-top: 15px;
 }
