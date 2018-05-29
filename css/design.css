@@ -69,6 +69,7 @@ a{
 	width: 50px;
 	height: 25px;
 	position: relative;
+	background: yellow;
 	top: 35px;
 	left: 50px;
 	cursor: pointer;
@@ -91,22 +92,23 @@ a{
 	text-align: center;
 }
 .top .use .cart .cartbox p:nth-child(1){
-	font-size: 20px;
+
 }
 .top .use .cart .cartbox p:nth-child(2){
 	color: #ccc;
+	font-size: 20px;
 }
-.top .use .cart .scartbox{
+.top .use .cart .cartbox .scartbox{
+	display: block;
 	width: 15px;
 	height: 15px;
 	background: white;
 	position: absolute;
-	top: 23px;
-	left: 4px;
+	top: -6px;
+	left: 250px;
 	transform: rotateZ(45deg);
 	border-radius: 3px;
 	z-index: 1001;
-	opacity: 0;
 }
 .top .use .cart i{
 	font-size: 20px;
@@ -310,10 +312,10 @@ a{
 	width: 1583px;
 	height: 517px;
 	background: #f9f8f6;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .mid .ft .p2top .p2topimg{
-	width: 2392.8px;
+	width: 2500px;
 	height: 100%;
 	background: pink;
 }
