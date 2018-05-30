@@ -69,7 +69,7 @@ a{
 	width: 50px;
 	height: 25px;
 	position: relative;
-	background: yellow;
+/*	background: yellow;*/
 	top: 35px;
 	left: 50px;
 	cursor: pointer;
@@ -82,19 +82,20 @@ a{
 	top: 30px;
 	left: -240px;
 	z-index: 1000;
-	/* display: none; */
 	box-sizing: border-box;
 	padding-top: 140px;
 	opacity: 0;
 	border-radius: 10px;
 }
+.top .use .cart .cartbox img{
+	position: absolute;
+	left: 93px;
+	top:32px;
+}
 .top .use .cart .cartbox p{
 	text-align: center;
 }
-.top .use .cart .cartbox p:nth-child(1){
-
-}
-.top .use .cart .cartbox p:nth-child(2){
+.top .use .cart .cartbox .p1{
 	color: #ccc;
 	font-size: 20px;
 }
@@ -138,16 +139,18 @@ a{
 }
 .ftop{
 	width: 100%;
-	height: 60px;
+	height: 0px;
 	position: fixed;
 	background: #191919;
 	top: 0;
 	left: 0;
-	z-index: 999;
-	opacity: 0;
+	overflow: hidden;
+	z-index: 1001;
+	/*opacity: 0;*/
+
 }
 .ftop .ul1 li:nth-child(1) h2{
-	height: 60px;
+	height: 100%;
 	line-height: 60px;
 	color: grey;
 	font-size: 20px;
@@ -158,6 +161,7 @@ a{
 	width: 600px;
 	height: 100%;
 	margin-left: 140px;
+	box-sizing: border-box;
 }
 .ftop .ul1 ul li{
 	height: 100%;
@@ -186,6 +190,7 @@ a{
 	line-height: 60px;
 	text-align: center;
 	position: relative;
+	box-sizing: border-box;
 
 }
 .ftop .ul2 li{
@@ -229,6 +234,7 @@ a{
 	width: 1583px;
 	height: 40px;
 	position: relative;
+	overflow: hidden;
 }
 .mid .top{
 	width: 1583px;
@@ -312,7 +318,7 @@ a{
 	width: 1583px;
 	height: 517px;
 	background: #f9f8f6;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 .mid .ft .p2top .p2topimg{
 	width: 2500px;
