@@ -74,32 +74,33 @@ a{
 	left: 50px;
 	cursor: pointer;
 }
-.top .use .cart .cartbox{
+.top .use .cartbox{
 	width: 300px;
 	height: 300px;
 	background: white;
 	position: absolute;
-	top: 30px;
-	left: -240px;
+	top: 70px;
+	left: -195px;
 	z-index: 1000;
 	box-sizing: border-box;
 	padding-top: 140px;
 	opacity: 0;
 	border-radius: 10px;
+/*	overflow: hidden;*/
 }
-.top .use .cart .cartbox img{
+.top .use .cartbox img{
 	position: absolute;
 	left: 93px;
 	top:32px;
 }
-.top .use .cart .cartbox p{
+.top .use .cartbox p{
 	text-align: center;
 }
-.top .use .cart .cartbox .p1{
+.top .use .cartbox .p1{
 	color: #ccc;
 	font-size: 20px;
 }
-.top .use .cart .cartbox .scartbox{
+.top .use .cartbox .scartbox{
 	display: block;
 	width: 15px;
 	height: 15px;
