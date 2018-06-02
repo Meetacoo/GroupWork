@@ -1,6 +1,12 @@
 a{
 	text-decoration: none;
 }
+.rightlist{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0.7;
+}
 .top{
 	width: 1583px;	
 	height: 100px;
@@ -65,6 +71,9 @@ a{
 	position: absolute;
 	top: 35px;
 }
+/*.top .use a:hover{
+	background: white;
+}*/
 .top .use .cart{
 	width: 50px;
 	height: 25px;
@@ -86,6 +95,7 @@ a{
 	padding-top: 140px;
 	opacity: 0;
 	border-radius: 10px;
+	display: none;
 /*	overflow: hidden;*/
 }
 .top .use .cartbox img{
@@ -318,13 +328,13 @@ a{
 .mid .ft .p2top{
 	width: 1583px;
 	height: 517px;
-	background: #f9f8f6;
+	background: #f1efeb;
 	overflow: hidden;
 }
 .mid .ft .p2top .p2topimg{
 	width: 2500px;
 	height: 100%;
-	background: pink;
+	background: #f1efeb;
 }
 .mid .ft .p2top li:nth-child(1){
 	margin-left: 38.3px;

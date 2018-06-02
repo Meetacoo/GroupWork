@@ -5,7 +5,7 @@ function animation(obj,opation,isLinear,fnEnd){
 	clearInterval(obj.timer);
 	//初始化速度
 	var iSpeed = 0;
-
+	
 	obj.timer = setInterval(function(){
 		//1.isStopAll用来代表改对象上的所有属性的动画是否执行完毕
 		//2.每次定时器函数执行时把isStopAll改为true,在属性循环执行动画中如果有一个属性没有结束动画,就把该值该为false
