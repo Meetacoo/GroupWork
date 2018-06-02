@@ -113,6 +113,7 @@ a:hover{
 	border-radius: 10px;
 	position: relative;
 	display: none;
+	opacity: 0;
 }
 .carf .carf-box .top{
 	position: absolute;
@@ -245,6 +246,7 @@ a:hover{
 	color: #333;
 	position: absolute;
 	top: 50%;
+	border: 1px solid #333;
 	/*left: 50%;*/
 	margin-left: 20px;
 	margin-right: 20px;
@@ -927,4 +929,7 @@ a:hover{
 	display: inline-block;
 	float: right;
 	color: #45474b;
+}
+.footer .footer-bottom .b-right .arrow i{
+	vertical-align: -2px;
 }

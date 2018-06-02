@@ -14,16 +14,22 @@
 		<div class="user-up">
 			<a href="#"><i class="fas fa-user"></i></a>
 			<input type="text" name="" placeholder="手机号/邮箱">
+			<span class="checkphone">手机号/邮箱格式错误</span>
 		</div>
 		<div class="user-down">
 			<a href="#"><i class="fas fa-key"></i></a>
-			<input type="text" name="" placeholder="密码">
+			<input type="password" name="password" placeholder="密码">
+			<span class="checkpwd">密码错误</span>
 		</div>
 		<div class="check">
-			<a href="#"><!-- <input type="checkbox" name="" id="checkboxOneInput"><label for="checkboxOneInput"> --><span class="checkbox"><i class="fas fa-check-circle"></i></span>&nbsp;&nbsp;自动登录</label></a>
-			<a href="#"><span>注册 Smartisan ID&nbsp;&nbsp;</span><span>&nbsp;&nbsp;忘记密码？</span></a>
+			<a href="javascript:;"><span class="checkbox"><i class="fas fa-check-circle"></i></span>&nbsp;&nbsp;自动登录</label></a>
+			<a href="javascript:;"><span>注册 Smartisan ID&nbsp;&nbsp;</span><span>&nbsp;&nbsp;忘记密码？</span></a>
 		</div>
-		<input type="button" name="" value="登录" class="enter">
+		<div class="checkbox">
+			<!-- <input type="button" name="" value="登录" class="enter"> -->
+			<button class="enter"><a href="index.html">登录</a></button>
+			<div class="mask">登录</div>
+		</div>
 		<div class="footer">
 			<span>其他账号登录：</span>
 			<a href="#" class="link1"><i class="iconfont">&#xe608;</i>&nbsp;</a>
