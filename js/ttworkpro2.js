@@ -1,4 +1,6 @@
-function rightlist(){
+
+;(function(w){
+	function wyyrightlist(){
 	var oRightBox=document.querySelector('.rightlist');
 	var iHeight= window.innerHeight;
 	var iTop=document.body.scrollTop ||document.documentElement.scrollTop;
@@ -14,9 +16,10 @@ function rightlist(){
 	oRightBox.onmouseleave=function(){
 		animation(oRightBox,{opacity:70});
 	}
-
 }
-function nav(){
+w.wyyrightlist=wyyrightlist;
+})(window);
+function wyynav(){
 	var show=false;
 window.onscroll=function(){
 	var oBox=document.querySelector('.ftop');
@@ -47,8 +50,44 @@ window.onscroll=function(){
 		}
 	}
 }
-nav();
-function nulbox(){
+
+(function(w){
+	function wyynav(){
+	var show=false;
+window.onscroll=function(){
+	var oBox=document.querySelector('.ftop');
+	var oNav=document.querySelector('.mid .nav');
+
+	var oMid=document.querySelector('.mid');
+	var iHeight = window.innerHeight;
+	// var timer=null;
+	var iTop = document.body.scrollTop || 
+		document.documentElement.scrollTop;
+		console.log(iTop)
+		if(iTop>=100){
+			if(!show){
+				animation(oBox,{height:60});
+				// animation(oNav,{opacity:50})
+				// oMid.style.marginTop='140px';
+				show=true;
+			}
+				
+		}else{
+			if(show){
+				animation(oBox,{height:0});
+				// oBox.style.height=0;
+				// oMid.style.marginTop='0px'
+				// animation(oNav,{opacity:100})
+				show=false;
+			}
+		}
+	}
+}
+w.wyynav=wyynav;
+wyynav();
+})(window);
+(function(w){
+	function wyynulbox(){
 	var oCat=document.querySelector('.top .use .cart');
 	var oCartBox=document.querySelector('.top .use .cartbox');
 		oCat.onmouseenter=function(){
@@ -61,8 +100,9 @@ function nulbox(){
 		animation(oCartBox,{opacity:0})
 	}
 }
-window.onload=function(){
-	rightlist();
-	nav();
-	nulbox()
-}
+w.wyynulbox=wyynulbox;
+})(window);
+
+wyyrightlist();
+wyynav();
+wyynulbox()

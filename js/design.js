@@ -183,7 +183,7 @@ w.wyyrightlist=wyyrightlist
 				// }
 			}
 
-				console.log(l)
+				// console.log(l)
 		}
 	}
 	w.wyyshow=wyyshow;
