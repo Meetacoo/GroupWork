@@ -259,10 +259,26 @@
 	w.hjfHotGoods = hjfHotGoods;
 })(window);
 (function(w){
-	
+	function hjfFoot(){
+		var oIdown = document.querySelector('.footer .footer-bottom .b-right .arrow i');
+		var oIup = document.querySelector('.footer .footer-bottom .b-hidden .arrow i');
+		var oHidden = document.querySelector('.footer .footer-bottom .b-hidden');
+		oIdown.onclick = function(){
+			oHidden.style.display = 'block';
+			oIup.className = 'fas fa-sort-down active';
+			oIdown.className = 'fas fa-sort-down active';
+			oIdown.className = 'fas fa-sort-down';
+		}
+		oHidden.onclick = function(){
+			oHidden.style.display = 'none';
+			oIup.className = 'fas fa-sort-down';
+		}
+	}
+	w.hjfFoot = hjfFoot;
 })(window)
 hjfScroll();
 hjfTopNav();
 hjfPhoneContent();
 hjfCarousel();
 hjfHotGoods();
+hjfFoot();

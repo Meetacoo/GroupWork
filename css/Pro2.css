@@ -104,10 +104,14 @@ a{
 }
 .top .use .cartbox p{
 	text-align: center;
+	margin-top: 10px;
 }
 .top .use .cartbox .p1{
-	color: #ccc;
+	/*color: #ccc;*/
 	font-size: 20px;
+}
+.top .use .cartbox .p2{
+	color: #ccc;
 }
 .top .use .cartbox .scartbox{
 	display: block;
@@ -132,6 +136,8 @@ a{
 	width: 25px;
 	height: 25px;
 	display: block;
+	color: white;
+	line-height: 25px;
 	text-align: center;
 	background: #9a9a9a;
 	border-radius: 50%;

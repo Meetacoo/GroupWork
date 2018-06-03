@@ -135,7 +135,7 @@
 				animation(oCheckPwd,{opacity:0});
 				checkPwd = true;
 				// oMask.style.display = 'none';
-
+				
 				oEnter.className = 'enter';
 			}
 		}
