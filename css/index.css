@@ -912,24 +912,75 @@ a:hover{
 	background-color: #ccc;
 	vertical-align: -1px;
 }
-.footer .footer-bottom .b-right{
+.footer .footer-bottom .b-right,
+.footer .footer-bottom .b-hidden{
 	width: 80px;
 	float: right;
 	/*background-color: pink;*/
 	line-height: 60px;
 }
-.footer .footer-bottom .b-right .flag{
+.footer .footer-bottom .b-hidden{
+	position: absolute;
+	width: 120px;
+	/*right: 0;*/
+	left: 83.6%;
+	float: right;
+	height: 120px;
+	/*display: none;*/
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	text-align: center;
+	margin-left: -20px;
+	padding-left: 3px;
+	box-sizing: border-box;
+	margin-top: -60px;
+	line-height: 60px;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 666;
+	display: none;
+}
+.footer .footer-bottom .b-hidden .eng{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	background-color: #fbfbfb;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+.footer .footer-bottom .b-hidden .eng a{
+	font-size: 11px;
+	display: inline-block;
+	height: 11px;
+	line-height: 11px;
+}
+.footer .footer-bottom .b-hidden .eng img{
+	background-size: 100%;
+	vertical-align: -2px;
+	margin-left: -20px;
+}
+.footer .footer-bottom .b-right .flag,
+.footer .footer-bottom .b-hidden .flag{
 	background-color: #fafafa;
 }
-.footer .footer-bottom .b-right a span{
+.footer .footer-bottom .b-right a span,
+.footer .footer-bottom .b-hidden a span{
 	color: #45474b;
 	font-size: 11px;
+	margin-left: 5px;
 }
-.footer .footer-bottom .b-right .arrow{
+.footer .footer-bottom .b-right .arrow,
+.footer .footer-bottom .b-hidden .arrow{
 	display: inline-block;
 	float: right;
 	color: #45474b;
 }
-.footer .footer-bottom .b-right .arrow i{
-	vertical-align: -2px;
+
+.footer .footer-bottom .b-hidden .arrow{
+	margin-left: 20px;
+	float: none;
+}
+.footer .footer-bottom .b-right .arrow i,
+.footer .footer-bottom .b-hidden .arrow i{
+	vertical-align: 2px;
 }
