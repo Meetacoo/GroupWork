@@ -936,7 +936,7 @@ a:hover{
 	line-height: 60px;
 	overflow: hidden;
 	border-radius: 5px;
-	z-index: 666;
+	/*z-index: 666;*/
 	display: none;
 }
 .footer .footer-bottom .b-hidden .eng{
@@ -944,9 +944,12 @@ a:hover{
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
-	background-color: #fbfbfb;
+	background-color: #fff;
 	box-sizing: border-box;
 	border-bottom: 1px solid #eee;
+}
+.footer .footer-bottom .b-hidden .china{
+	background-color: #fbfbfb;
 }
 .footer .footer-bottom .b-hidden .eng a{
 	font-size: 11px;
@@ -983,4 +986,10 @@ a:hover{
 .footer .footer-bottom .b-right .arrow i,
 .footer .footer-bottom .b-hidden .arrow i{
 	vertical-align: 2px;
+}
+.footer .footer-bottom .b-right .arrow i.active,
+.footer .footer-bottom .b-hidden .arrow i.active{
+	/*vertical-align: 2px;*/
+	transform: rotateZ(180deg);
+	transition: all 0.5s;
 }

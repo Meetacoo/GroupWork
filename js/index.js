@@ -265,9 +265,13 @@
 		var oHidden = document.querySelector('.footer .footer-bottom .b-hidden');
 		oIdown.onclick = function(){
 			oHidden.style.display = 'block';
+			oIup.className = 'fas fa-sort-down active';
+			oIdown.className = 'fas fa-sort-down active';
+			oIdown.className = 'fas fa-sort-down';
 		}
-		oIup.onclick = function(){
-			oHidden.style.display = 'none'
+		oHidden.onclick = function(){
+			oHidden.style.display = 'none';
+			oIup.className = 'fas fa-sort-down';
 		}
 	}
 	w.hjfFoot = hjfFoot;
