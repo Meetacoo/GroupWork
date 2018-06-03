@@ -1,6 +1,6 @@
 ;(function(w){
 	function wyynav(){
-	var show=false;
+	var show=false;  
 window.onscroll=function(){
 	var oBox=document.querySelector('.ftop');
 	var oNav=document.querySelector('.mid .nav');
@@ -10,7 +10,7 @@ window.onscroll=function(){
 	// var timer=null;
 	var iTop = document.body.scrollTop || 
 		document.documentElement.scrollTop;
-		console.log(iTop)
+		// console.log(iTop)
 		if(iTop>=100){
 			if(!show){
 				animation(oBox,{height:60});
@@ -93,6 +93,7 @@ w.wyyrightlist=wyyrightlist
 	// var oShopBox=document.querySelector('.top .use .cartbox')
 	var timer=null;
 	oCat.onmouseenter=function(){
+		// clearTimeout(timer);
 		oCartBox.style.display='block';
 		animation(oCartBox,{opacity:100})
 		
@@ -106,8 +107,10 @@ w.wyyrightlist=wyyrightlist
 
 	// }
 	oCartBox.onmouseleave=function(){
+		// timer=setTimeout(function(){
 		oCartBox.style.opacity=0;
 		oCartBox.style.display='none';
+	// },500)
 	}
 	// oCat.onmouseleave=function(){
 	// 	clearTimeout(timer)
@@ -117,16 +120,17 @@ w.wyyrightlist=wyyrightlist
 	// 	},300)
 	// }
 	oCartBox.onmouseenter=function(){
+		clearTimeout(timer);
 		oCartBox.style.opacity=100;
 		oCartBox.style.display='block';
 	}
 	oCat.onmouseleave=function(){
+		// timer=setTimeout(function(){
 		timer=setTimeout(function(){
-		
 		oCartBox.style.opacity=0;
 		oCartBox.style.display='none';
-	
-	},300)
+	},500)
+	// },300)
 
 	}
 }
