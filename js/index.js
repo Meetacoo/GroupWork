@@ -263,10 +263,11 @@
 		var oIdown = document.querySelector('.footer .footer-bottom .b-right .arrow i');
 		var oIup = document.querySelector('.footer .footer-bottom .b-hidden .arrow i');
 		var oHidden = document.querySelector('.footer .footer-bottom .b-hidden');
-		oIdown.click = function(){
+		oIdown.onclick = function(){
 			oHidden.style.display = 'block';
-		}
+
 		console.log(oHidden);
+		}
 	}
 	w.hjfFoot = hjfFoot;
 })(window)
