@@ -6,8 +6,8 @@
 	var aInput = document.querySelectorAll('input');
 	var oCheckPhone = document.querySelector('.main .user-up .checkphone');
 	var oCheckPwd = document.querySelector('.main .user-down .checkpwd');
-	var oMask = document.querySelector('.mask');
-	var oEnter = document.querySelector('.enter');
+	// var oMask = document.querySelector('.mask');
+	var oEnter = document.querySelector('.mask');
 	var oEnterI = document.querySelector('.check a span i');
 	console.log(oCheckPhone);
 	console.log(oCheckPwd);
@@ -134,16 +134,20 @@
 				oCheckPwd.style.display = 'none';
 				animation(oCheckPwd,{opacity:0});
 				checkPwd = true;
-				oMask.style.display = 'none';
+				// oMask.style.display = 'none';
+
+				oEnter.className = 'enter';
 			}
 		}
 	}
-	// oMask.onclick = function(){
-	// 	if(checkPwd&&checkUser){
-	// 		// oEnter.style.display = 'block';
-	// 		oMask.style.display = 'none';
-	// 	}
-	// }
+	oEnter.onclick = function(){
+		if(!checkPwd||!checkUser){
+			// oEnter.style.display = 'block';
+			// oMask.style.display = 'none';
+			oEnter.className = 'enter';
+			return false;
+		}
+	}
 	
 	function oEnI(){
 		oEnterI.onclick = function(){
