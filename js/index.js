@@ -265,8 +265,9 @@
 		var oHidden = document.querySelector('.footer .footer-bottom .b-hidden');
 		oIdown.onclick = function(){
 			oHidden.style.display = 'block';
-
-		console.log(oHidden);
+		}
+		oIup.onclick = function(){
+			oHidden.style.display = 'none'
 		}
 	}
 	w.hjfFoot = hjfFoot;
