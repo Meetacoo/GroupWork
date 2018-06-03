@@ -49,7 +49,7 @@ window.onscroll=function(){
 			}
 		}
 	}
-}
+};
 
 (function(w){
 	function wyynav(){

@@ -10,7 +10,7 @@ window.onscroll=function(){
 	// var timer=null;
 	var iTop = document.body.scrollTop || 
 		document.documentElement.scrollTop;
-		// console.log(iTop)
+		console.log(iTop)
 		if(iTop>=100){
 			if(!show){
 				animation(oBox,{height:60});
@@ -33,7 +33,6 @@ window.onscroll=function(){
 w.wyynav=wyynav;
 wyynav();
 })(window);
-
 (function(w){
 	function wyyrightlist(){
 	var oRightBox=document.querySelector('.rightlist');
@@ -146,14 +145,14 @@ w.wyyrightlist=wyyrightlist
 		
 
 		oLeftSpan[0].onclick=function(){
-			console.log(l)
+			// console.log(l)
 			// console.log(l)
 			if(l<632){
 				now++;
 				if(now<3){
 					animation(oImgBox,{marginLeft:now*316});
-					console.log('now',now)
-					console.log('marginLeft',oImgBox.style.marginLeft)
+					// console.log('now',now)
+					// console.log('marginLeft',oImgBox.style.marginLeft)
 				}
 				
 			}
